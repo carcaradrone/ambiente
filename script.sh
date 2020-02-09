@@ -31,10 +31,10 @@ echo "##################"
 echo "##################"
 
 
-mkdir projetos
-cd projetos
-echo "clonando repositorio px4..." >> ../log.txt
+mkdir ~/projetos
+cd ~/projetos
+echo "clonando repositorio px4..." >> ./log.txt
 git clone https://github.com/PX4/Firmware.git
-echo "executando script do repo..." >> ../log.txt
-chmod a+x Firmware/Tools/setup/ubuntu.sh
-./Firmware/Tools/setup/ubuntu.sh
+echo "executando script do repo..." >> ./log.txt
+chmod a+x ~/projetos/Firmware/Tools/setup/ubuntu.sh
+~/projetos/Firmware/Tools/setup/ubuntu.sh
