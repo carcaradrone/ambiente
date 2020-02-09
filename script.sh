@@ -20,7 +20,7 @@ echo "##################"
 echo "##################"
 echo "##################"
 
-echo "atualizando pacotes..." >> log.txt
+echo "atualizando pacotes..."
 apt -y upgrade
 
 echo "instalando pacotes essenciais..." >> log.txt
@@ -36,5 +36,5 @@ cd projetos
 echo "clonando repositorio px4..." >> ../log.txt
 git clone https://github.com/PX4/Firmware.git
 echo "executando script do repo..." >> ../log.txt
-chmod a+x Firmware/Fools/setup/ubuntu.sh
+chmod a+x Firmware/Tools/setup/ubuntu.sh
 ./Firmware/Tools/setup/ubuntu.sh
