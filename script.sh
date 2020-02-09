@@ -33,7 +33,7 @@ echo "instalando pacotes essenciais..." >> ./log.txt
 
 apt -y install htop tree git net-tools rsync tcpdump netcat locate sudo terminator openssh-client openssh-server
 
-echo "instalação do qground control"
+echo "instalação do qground control" >> ./log.txt
 
 usermod -a -G dialout $USER
 apt-get remove modemmanager -y
