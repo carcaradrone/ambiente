@@ -39,6 +39,9 @@ echo "##################"
 
 echo "clonando repositorio px4..." >> ./log.txt
 git clone https://github.com/PX4/Firmware.git
-echo "executando script do repo..." >> ./log.txt
+echo "executando script do repo...(vai demorar uns minutos...)" >> ./log.txt
 chmod a+x ~/projetos/Firmware/Tools/setup/ubuntu.sh
 ~/projetos/Firmware/Tools/setup/ubuntu.sh
+echo "########################################"
+echo "instalacao finalizada! CarcaDrones!" >> ./log.txt
+
