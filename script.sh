@@ -2,11 +2,11 @@
 
 resp="s"
 
+echo "########## script do ambiente px4 ##############"
+cat ./carcara.txt
 mkdir ~/projetos
 cd ~/projetos
 
-echo "########## script do ambiente px4 ##############"
-echo "Equipe carcará drones. UVA/RJ"
 sleep 1
 echo  .
 sleep 1
@@ -14,6 +14,7 @@ echo  .
 sleep 1
 echo  .
 
+echo  "criando arquivo de log..."
 touch log.txt
 echo "inicia log.............." >> log.txt
 echo "atualizando repositorios..." >> log.txt
