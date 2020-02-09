@@ -2,7 +2,7 @@
 
 resp="s"
 
-echo "######### script do ambiente px4 #############"
+echo "########## script do ambiente px4 ##############"
 echo "Equipe carcará drones. UVA/RJ"
 sleep 1
 echo  .
