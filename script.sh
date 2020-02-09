@@ -2,7 +2,7 @@
 
 resp="s"
 
-echo "########## script do ambiente px4 ##############"
+echo "##################################### script do ambiente px4 ##################################"
 cat ./carcara.txt
 mkdir ~/projetos
 cd ~/projetos
@@ -32,6 +32,15 @@ apt -y upgrade
 echo "instalando pacotes essenciais..." >> ./log.txt
 
 apt -y install htop tree git net-tools rsync tcpdump netcat locate sudo terminator openssh-client openssh-server
+
+echo "instalação do qground control"
+
+usermod -a -G dialout $USER
+apt-get remove modemmanager -y
+apt -y install gstreamer1.0-plugins-bad gstreamer1.0-libav
+wget https://s3-us-west-2.amazonaws.com/qgroundcontrol/latest/QGroundControl.AppImage
+chmod +x ./QGroundControl.AppImage
+
 
 echo "##################"
 echo "##################"
